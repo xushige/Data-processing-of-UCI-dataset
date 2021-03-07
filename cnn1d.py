@@ -6,10 +6,10 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 from rexnetv1 import*
-X_train = torch.from_numpy(np.load('../public_dataset/UCI/x_train.npy'))
-X_test = torch.from_numpy(np.load('../public_dataset/UCI/x_test.npy'))
-Y_train = torch.from_numpy(np.load('../public_dataset/UCI/y_train.npy'))
-Y_test = torch.from_numpy(np.load('../public_dataset/UCI/y_test.npy'))
+X_train = torch.from_numpy(np.load('UCI/x_train.npy'))
+X_test = torch.from_numpy(np.load('UCI/x_test.npy'))
+Y_train = torch.from_numpy(np.load('UCI/y_train.npy'))
+Y_test = torch.from_numpy(np.load('UCI/y_test.npy'))
 
 X_train = X_train.reshape(X_train.size(0), 1, X_train.size(1), X_train.size(2))
 X_test = X_test.reshape(X_test.size(0), 1, X_test.size(1), X_test.size(2))
